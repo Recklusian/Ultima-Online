@@ -1,0 +1,100 @@
+if not hidden
+    if not timerexists 'hcd'
+        skill 'hiding'
+        createtimer 'hcd'
+        elseif timer 'hcd' >= 10000
+        skill 'hiding'
+        settimer 'hcd' 0
+    endif
+    while timer 'hcd' <= 1000 
+        wait 1000               
+        endwhile
+        while timer 'hcd' <= 2000
+        overhead 9 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 3000
+        overhead 8 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 4000
+        overhead 7 0        
+        wait 990
+        endwhile
+        while timer 'hcd' <= 5000
+        overhead 6 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 6000
+        overhead 5 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 7000
+        overhead 4 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 8000
+        overhead 3 0
+        wait 990
+        endwhile
+        while timer 'hcd' <= 9100
+        overhead 2 0
+        wait 990        
+        endwhile
+        while timer 'hcd' <= 10200    
+        overhead 1 0
+        wait 990
+        endwhile
+        removetimer 'hcd'        
+endif
+
+if hidden
+    if not timerexists 'hcd'
+        skill 'stealth'
+        createtimer 'hcd'
+        elseif timer 'hcd' >= 10000
+        skill 'stealth'
+        settimer 'hcd' 0
+    endif
+    while timer 'hcd' <= 1000         
+        overhead 10 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 2000
+        overhead 9 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 3000
+        overhead 8 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 4000
+        overhead 7 5 
+        wait 990       
+        endwhile
+        while timer 'hcd' <= 5000        
+        overhead 6 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 6000
+        overhead 5 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 7000
+        overhead 4 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 8000
+        overhead 3 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 9100
+        overhead 2 5
+        wait 990
+        endwhile
+        while timer 'hcd' <= 10200  
+        overhead 1 5
+        wait 990
+        endwhile
+        removetimer 'hcd'
+endif
